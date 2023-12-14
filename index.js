@@ -65,8 +65,8 @@ app.post("/add", async (req, res) => {
     console.log(err);
   }
 });
-app.post("/user", async (req, res) => {});
-   app.post("/new", async (req, res) => {
+
+  app.post("/new", async (req, res) => {
     const name = req.body.name;
     const color = req.body.color;
   
