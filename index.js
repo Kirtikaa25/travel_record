@@ -92,7 +92,6 @@ app.post("/user", async (req, res) => {
       "INSERT INTO users (name, color) VALUES($1, $2) RETURNING *;",
       [name, color]
     );
-  
     const id = result.rows[0].id;
     currentUserId = id;
   
