@@ -17,7 +17,7 @@ db.connect();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-let currentUserId = 1;
+let currentUserId = 1; //initial number of user in users table
 
 let users = [
   { id: 1, name: "Kirtika", color: "powderblue" },
