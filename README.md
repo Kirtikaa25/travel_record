@@ -1,6 +1,6 @@
-Family Tracker
+## Family Tracker
 
-Overview
+## Overview
 Family Tracker is a web application that allows you and your family members to color-code the world map based on the places you have visited. It provides a visual representation of your travels and helps you keep track of your family’s global adventures.
 
 ## Table of Contents
@@ -57,4 +57,4 @@ Visit http://localhost:3000 in your web browser.
 Register or log in to your account.
 Start coloring the map by selecting the countries you have visited.
 View your family’s aggregated travel map.
-HAPPY CODING
+## HAPPY CODING
