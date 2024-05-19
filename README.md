@@ -27,26 +27,33 @@ Family Tracker is a web application that allows you and your family members to c
 ### Backend Setup
 1. Clone the repository:
    ```sh
-  git clone https://github.com/Kirtikaa25/travel-record.git
+  git clone https://github.com/Kirtikaa25/travel_record
    cd family-tracker
 
 ## Navigate to the backend directory and install dependencies:
 sh
 Copy code
+
 cd backend
+
 npm install
 
 ## Create a .env file in the backend directory and add the following variables:
 
 env
+
 Copy code
+
 DATABASE_URL=postgres://username:password@localhost:5432/yourdatabase
+
 SESSION_SECRET=your_session_secret
 
 ## Start the backend server:
 
 sh
+
 Copy code
+
 npm start
 
 ## Frontend Setup
