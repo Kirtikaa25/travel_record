@@ -7,7 +7,7 @@ Family Tracker is a web application that allows you and your family members to c
 - Features
 - Installation
 - Usage
-- Technologies Used
+- Technologies Used - Node,Express,EJS,PostgreSQL
 
 ## Features
 - User authentication
@@ -23,23 +23,16 @@ Family Tracker is a web application that allows you and your family members to c
 
 ### Backend Setup
 1. Clone the repository:
-2. 
-git clone https://github.com/Kirtikaa25/travel_record
-
-cd travel_record
+2. git clone https://github.com/Kirtikaa25/travel_record
+3. cd travel_record
 
 ## Navigate to the backend directory and install dependencies:
-
-Copy code
 
 cd backend
 
 npm install
 
 ## Create a .env file in the backend directory and add the following variables:
-
-
-Copy code
 
 DATABASE_URL=postgres://username:password@localhost:5432/yourdatabase
 
