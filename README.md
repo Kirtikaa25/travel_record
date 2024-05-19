@@ -7,10 +7,7 @@ Family Tracker is a web application that allows you and your family members to c
 - Features
 - Installation
 - Usage
-- Project Structure
 - Technologies Used
-- Contributing
-- License
 
 ## Features
 - User authentication
@@ -22,7 +19,6 @@ Family Tracker is a web application that allows you and your family members to c
 
 ### Prerequisites
 - Node.js
-- 
 - PostgreSQL
 
 ### Backend Setup
@@ -69,4 +65,5 @@ Register or log in to your account.
 
 Start coloring the map by selecting the countries you have visited.
 View your family’s aggregated travel map.
-## HAPPY CODING
+## This is what you'll end up with
+
