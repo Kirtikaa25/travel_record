@@ -24,10 +24,8 @@ Family Tracker is a web application that allows you and your family members to c
 ### Backend Setup
 1. Clone the repository:
    ```sh
-   
-  git clone https://github.com/Kirtikaa25/travel_record
-  
-  cd travel_record
+git clone https://github.com/Kirtikaa25/travel_record
+cd travel_record
 
 ## Navigate to the backend directory and install dependencies:
 sh
