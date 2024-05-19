@@ -4,13 +4,13 @@
 Family Tracker is a web application that allows you and your family members to color-code the world map based on the places you have visited. It provides a visual representation of your travels and helps you keep track of your family’s global adventures.
 
 ## Table of Contents
-- [Features]
-- [Installation]
-- [Usage]
-- [Project Structure]
-- [Technologies Used]
-- [Contributing]
-- [License]
+- Features
+- Installation
+- Usage
+- Project Structure
+- Technologies Used
+- Contributing
+- License
 
 ## Features
 - User authentication
@@ -27,7 +27,7 @@ Family Tracker is a web application that allows you and your family members to c
 ### Backend Setup
 1. Clone the repository:
    ```sh
-  git clone https://github.com/yourusername/family-tracker.git
+  git clone https://github.com/Kirtikaa25/travel-record.git
    cd family-tracker
 
 ## Navigate to the backend directory and install dependencies:
