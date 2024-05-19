@@ -67,4 +67,4 @@ Start coloring the map by selecting the countries you have visited.
 View your family’s aggregated travel map.
 ## This is what you'll end up with
 
-<img width="1440" alt="Screenshot 2024-05-19 at 6 21 40 PM" src="https://github.com/Kirtikaa25/travel_record/assets/100124517/6082c239-fe73-446f-b6cb-aff756ce8ef4">
+
