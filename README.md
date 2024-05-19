@@ -1,7 +1,7 @@
-### Family Tracker
+### TRAVEL RECORD
 
 ## Overview
-Family Tracker is a web application that allows you and your family members to color-code the world map based on the places you have visited. It provides a visual representation of your travels and helps you keep track of your family’s global adventures.
+Travel Record is a web application that allows you and your family members to color-code the world map based on the places you have visited. It provides a visual representation of your travels and helps you keep track of your family’s global adventures.
 
 ## Table of Contents
 - Features
