@@ -9,7 +9,7 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "world",
-  password: "password", // your postgres login password
+  password: "KI25@ika",
   port: 5432,
 });
 db.connect();
@@ -17,27 +17,31 @@ db.connect();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
-let currentUserId = 1; //initial number of user in users table
+let currentUserId = 1;
 
 let users = [
-  { id: 1, name: "Kirtika", color: "powderblue" },
-  { id: 2, name: "Rishi", color: "teal" },
+  { id: 1, name: "Angela", color: "teal" },
+  { id: 2, name: "Jack", color: "powderblue" },
 ];
 
 async function checkVisisted() {
-  const result = await db.query("SELECT country_code FROM visited_countries");
+  const result = await db.query(
+    "SELECT country_code FROM visited_countries JOIN users ON users.id = user_id WHERE user_id = $1; ",
+    [currentUserId]
+  );
   let countries = [];
   result.rows.forEach((country) => {
     countries.push(country.country_code);
   });
   return countries;
 }
+
 async function getCurrentUser() {
   const result = await db.query("SELECT * FROM users");
   users = result.rows;
   return users.find((user) => user.id == currentUserId);
-
 }
+
 app.get("/", async (req, res) => {
   const countries = await checkVisisted();
   const currentUser = await getCurrentUser();
@@ -73,6 +77,7 @@ app.post("/add", async (req, res) => {
     console.log(err);
   }
 });
+
 app.post("/user", async (req, res) => {
   if (req.body.add === "new") {
     res.render("new.ejs");
@@ -82,24 +87,25 @@ app.post("/user", async (req, res) => {
   }
 });
 
-  app.post("/new", async (req, res) => {
-    const name = req.body.name;
-    const color = req.body.color;
-  
-    const result = await db.query(
-      "INSERT INTO users (name, color) VALUES($1, $2) RETURNING *;",
-      [name, color]
-    );
-    const id = result.rows[0].id;
-    currentUserId = id;
-  
-    res.redirect("/");
-  });
+app.post("/new", async (req, res) => {
+  const name = req.body.name;
+  const color = req.body.color;
 
+  const result = await db.query(
+    "INSERT INTO users (name, color) VALUES($1, $2) RETURNING *;",
+    [name, color]
+  );
+
+  const id = result.rows[0].id;
+  currentUserId = id;
+
+  res.redirect("/");
+});
 
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
+
 
 
 
