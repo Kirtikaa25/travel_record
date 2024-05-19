@@ -26,30 +26,30 @@ Family Tracker is a web application that allows you and your family members to c
 
 ### Backend Setup
 1. Clone the repository:
-```sh
+   ```sh
   git clone https://github.com/yourusername/family-tracker.git
    cd family-tracker
 
-Navigate to the backend directory and install dependencies:
+## Navigate to the backend directory and install dependencies:
 sh
 Copy code
 cd backend
 npm install
 
-Create a .env file in the backend directory and add the following variables:
+## Create a .env file in the backend directory and add the following variables:
 
 env
 Copy code
 DATABASE_URL=postgres://username:password@localhost:5432/yourdatabase
 SESSION_SECRET=your_session_secret
 
-Start the backend server:
+## Start the backend server:
 
 sh
 Copy code
 npm start
 
-Frontend Setup
+## Frontend Setup
 The frontend part of this project is integrated with the backend using EJS templates.
 Usage
 Visit http://localhost:3000 in your web browser.
