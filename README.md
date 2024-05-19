@@ -31,7 +31,7 @@ Family Tracker is a web application that allows you and your family members to c
    
   git clone https://github.com/Kirtikaa25/travel_record
   
-  cd family-tracker
+  cd travel_record
 
 ## Navigate to the backend directory and install dependencies:
 sh
