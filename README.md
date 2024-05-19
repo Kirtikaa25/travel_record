@@ -22,16 +22,20 @@ Family Tracker is a web application that allows you and your family members to c
 
 ### Prerequisites
 - Node.js
+- 
 - PostgreSQL
 
 ### Backend Setup
 1. Clone the repository:
    ```sh
+   
   git clone https://github.com/Kirtikaa25/travel_record
-   cd family-tracker
+  
+  cd family-tracker
 
 ## Navigate to the backend directory and install dependencies:
 sh
+
 Copy code
 
 cd backend
@@ -58,10 +62,11 @@ npm start
 
 ## Frontend Setup
 The frontend part of this project is integrated with the backend using EJS templates.
-Usage
+
 Visit http://localhost:3000 in your web browser.
 
 Register or log in to your account.
+
 Start coloring the map by selecting the countries you have visited.
 View your family’s aggregated travel map.
 ## HAPPY CODING
