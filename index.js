@@ -9,7 +9,7 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "world",
-  password: "*****", // enter postgre login password
+  password: "YourPassword",
   port: 5432,
 });
 db.connect();
@@ -19,13 +19,11 @@ app.use(express.static("public"));
 
 let currentUserId = 1;
 
-let users = [
-  { id: 1, name: "", color: "" },
-];
+let users = [];
 
 async function checkVisisted() {
   const result = await db.query(
-    "SELECT country_code FROM visited_countries JOIN users ON users.id = user_id WHERE user_id = $1; ",
+    "SELECT country_code FROM visited_countries JOIN users ON users.id = visited_countries.user_id WHERE user_id = $1; ",
     [currentUserId]
   );
   let countries = [];
@@ -104,6 +102,7 @@ app.post("/new", async (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
+
 
 
 
