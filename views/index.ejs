@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -389,9 +390,15 @@
   <script>
     const country_codes = "<%= countries %>".split(",")
     console.log(typeof ("<%= countries %>"))
-    country_codes.forEach(code => {
-      document.getElementById(code).style.fill = "<%=color %>"
-    });
+    for (let i = 0; i < country_codes.length; i++) {
+      let code = country_codes[i];
+      let element = document.getElementById(code);
+      if (element) {
+          element.style.fill = "<%= color %>";
+      } else {
+          console.log(`Element with id ${code} not found`);
+      }
+  }
   </script>
 </body>
 
